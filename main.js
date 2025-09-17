@@ -1,157 +1,33 @@
 let cameras = [
     {
-        id: 0,
-        img_name: "00001",
-        width: 1959,
-        height: 1090,
-        position: [
-            -3.0089893469241797, -0.11086489695181866, -3.7527640949141428,
+        "id": 0,
+        "img_name": "DSC07956",
+        "width": 5187,
+        "height": 3361,
+        "position": [
+            0.32511876709066195,
+            2.9957802654512298,
+            -3.225355003982969
         ],
-        rotation: [
-            [0.876134201218856, 0.06925962026449776, 0.47706599800804744],
-            [-0.04747421839895102, 0.9972110940209488, -0.057586739349882114],
-            [-0.4797239414934443, 0.027805376500959853, 0.8769787916452908],
+        "rotation": [
+            [
+                0.9999338259558068,
+                -0.010638588983250229,
+                -0.004377685898681347
+            ],
+            [
+                0.008907733496057774,
+                0.9568136992250932,
+                -0.2905653063584087
+            ],
+            [
+                0.007279834705902121,
+                0.2905070832176699,
+                0.9568451487085131
+            ]
         ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 1,
-        img_name: "00009",
-        width: 1959,
-        height: 1090,
-        position: [
-            -2.5199776022057296, -0.09704735754873686, -3.6247725540304545,
-        ],
-        rotation: [
-            [0.9982731285632193, -0.011928707708098955, -0.05751927260507243],
-            [0.0065061360949636325, 0.9955928229282383, -0.09355533724430458],
-            [0.058381769258182864, 0.09301955098900708, 0.9939511719154457],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 2,
-        img_name: "00017",
-        width: 1959,
-        height: 1090,
-        position: [
-            -0.7737533667465242, -0.3364271945329695, -2.9358969417573753,
-        ],
-        rotation: [
-            [0.9998813418672372, 0.013742375651625236, -0.0069605529394208224],
-            [-0.014268370388586709, 0.996512943252834, -0.08220929105659476],
-            [0.00580653013657589, 0.08229885200307129, 0.9965907801935302],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 3,
-        img_name: "00025",
-        width: 1959,
-        height: 1090,
-        position: [
-            1.2198221749590001, -0.2196687861401182, -2.3183162007028453,
-        ],
-        rotation: [
-            [0.9208648867765482, 0.0012010625395201253, 0.389880004297208],
-            [-0.06298204172269357, 0.987319521752825, 0.14571693239364383],
-            [-0.3847611242348369, -0.1587410451475895, 0.9092635249821667],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 4,
-        img_name: "00033",
-        width: 1959,
-        height: 1090,
-        position: [
-            1.742387858893817, -0.13848225198886954, -2.0566370113193146,
-        ],
-        rotation: [
-            [0.24669889292141334, -0.08370189346592856, -0.9654706879349405],
-            [0.11343747891376445, 0.9919082664242816, -0.05700815184573074],
-            [0.9624300466054861, -0.09545671285663988, 0.2541976029815521],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 5,
-        img_name: "00041",
-        width: 1959,
-        height: 1090,
-        position: [
-            3.6567309419223935, -0.16470990600750707, -1.3458085590422042,
-        ],
-        rotation: [
-            [0.2341293058324528, -0.02968330457755884, -0.9717522161434825],
-            [0.10270823606832301, 0.99469554638321, -0.005638106875665722],
-            [0.9667649592295676, -0.09848690996657204, 0.2359360976431732],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 6,
-        img_name: "00049",
-        width: 1959,
-        height: 1090,
-        position: [
-            3.9013554243203497, -0.2597500978038105, -0.8106154188297828,
-        ],
-        rotation: [
-            [0.6717235545638952, -0.015718162115524837, -0.7406351366386528],
-            [0.055627354673906296, 0.9980224478387622, 0.029270992841185218],
-            [0.7387104058127439, -0.060861588786650656, 0.6712695459756353],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 7,
-        img_name: "00057",
-        width: 1959,
-        height: 1090,
-        position: [4.742994605467533, -0.05591660945412069, 0.9500365976084458],
-        rotation: [
-            [-0.17042655709210375, 0.01207080756938, -0.9852964448542146],
-            [0.1165090336695526, 0.9931575292530063, -0.00798543433078162],
-            [0.9784581921120181, -0.1161568667478904, -0.1706667764862097],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 8,
-        img_name: "00065",
-        width: 1959,
-        height: 1090,
-        position: [4.34676307626522, 0.08168160516967145, 1.0876221470355405],
-        rotation: [
-            [-0.003575447631888379, -0.044792503246552894, -0.9989899137764799],
-            [0.10770152645126597, 0.9931680875192705, -0.04491693593046672],
-            [0.9941768441149182, -0.10775333677534978, 0.0012732004866391048],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
-    },
-    {
-        id: 9,
-        img_name: "00073",
-        width: 1959,
-        height: 1090,
-        position: [3.264984351114202, 0.078974937336732, 1.0117200284114904],
-        rotation: [
-            [-0.026919994628162257, -0.1565891128261527, -0.9872968974090509],
-            [0.08444552208239385, 0.983768234577625, -0.1583319754069128],
-            [0.9960643893290491, -0.0876350978794554, -0.013259786205163005],
-        ],
-        fy: 1164.6601287484507,
-        fx: 1159.5880733038064,
+        "fy": 3852.356179237937,
+        "fx": 3844.898776958602
     },
 ];
 
@@ -570,9 +446,9 @@ function createWorker(self) {
             if (types["scale_0"]) {
                 const qlen = Math.sqrt(
                     attrs.rot_0 ** 2 +
-                        attrs.rot_1 ** 2 +
-                        attrs.rot_2 ** 2 +
-                        attrs.rot_3 ** 2,
+                    attrs.rot_1 ** 2 +
+                    attrs.rot_2 ** 2 +
+                    attrs.rot_3 ** 2,
                 );
 
                 rot[0] = (attrs.rot_0 / qlen) * 128 + 128;
@@ -737,18 +613,19 @@ let defaultViewMatrix = [
 ];
 let viewMatrix = defaultViewMatrix;
 async function main() {
-    let carousel = true;
+    let carousel = false;
     const params = new URLSearchParams(location.search);
     try {
         viewMatrix = JSON.parse(decodeURIComponent(location.hash.slice(1)));
         carousel = false;
-    } catch (err) {}
-    const url = new URL(
-        // "nike.splat",
-        // location.href,
-        params.get("url") || "train.splat",
-        "https://huggingface.co/cakewalk/splat-data/resolve/main/",
-    );
+    } catch (err) { }
+    // const url = new URL(
+    //     // "nike.splat",
+    //     // location.href,
+    //     params.get("url") || "train.splat",
+    //     "https://huggingface.co/cakewalk/splat-data/resolve/main/",
+    // );
+    const url = '/scenes/garden/garden_30000.ply';
     const req = await fetch(url, {
         mode: "cors", // no-cors, *cors, same-origin
         credentials: "omit", // include, *same-origin, omit
@@ -845,21 +722,25 @@ async function main() {
     gl.vertexAttribDivisor(a_index, 1);
 
     const resize = () => {
-        gl.uniform2fv(u_focal, new Float32Array([camera.fx, camera.fy]));
+        // 1) 实际渲染分辨率（与 gl.viewport 完全一致）
+        const renderW = Math.round(innerWidth / downsample);
+        const renderH = Math.round(innerHeight / downsample);
 
-        projectionMatrix = getProjectionMatrix(
-            camera.fx,
-            camera.fy,
-            innerWidth,
-            innerHeight,
-        );
+        gl.canvas.width = renderW;
+        gl.canvas.height = renderH;
+        gl.viewport(0, 0, renderW, renderH);
 
-        gl.uniform2fv(u_viewport, new Float32Array([innerWidth, innerHeight]));
+        // 2) 按分辨率比例缩放相机内参（从相机原始尺寸 -> 渲染尺寸）
+        // camera.width/height 是相机标定对应的原始图像分辨率
+        const fxScaled = camera.fx * (renderW / camera.width);
+        const fyScaled = camera.fy * (renderH / camera.height);
 
-        gl.canvas.width = Math.round(innerWidth / downsample);
-        gl.canvas.height = Math.round(innerHeight / downsample);
-        gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
+        // 3) 统一把“渲染用内参/视口”传给 shader
+        gl.uniform2fv(u_focal, new Float32Array([fxScaled, fyScaled]));
+        gl.uniform2fv(u_viewport, new Float32Array([renderW, renderH]));
 
+        // 4) 用缩放后的内参与渲染分辨率构建投影矩阵（你的 getProjectionMatrix 已含 Y 翻转）
+        projectionMatrix = getProjectionMatrix(fxScaled, fyScaled, renderW, renderH);
         gl.uniformMatrix4fv(u_projection, false, projectionMatrix);
     };
 
@@ -928,15 +809,18 @@ async function main() {
             currentCameraIndex = parseInt(e.key);
             camera = cameras[currentCameraIndex];
             viewMatrix = getViewMatrix(camera);
+            resize();
         }
         if (["-", "_"].includes(e.key)) {
             currentCameraIndex =
                 (currentCameraIndex + cameras.length - 1) % cameras.length;
             viewMatrix = getViewMatrix(cameras[currentCameraIndex]);
+            resize();
         }
         if (["+", "="].includes(e.key)) {
             currentCameraIndex = (currentCameraIndex + 1) % cameras.length;
             viewMatrix = getViewMatrix(cameras[currentCameraIndex]);
+            resize();
         }
         camid.innerText = "cam  " + currentCameraIndex;
         if (e.code == "KeyV") {
@@ -968,8 +852,8 @@ async function main() {
                 e.deltaMode == 1
                     ? lineHeight
                     : e.deltaMode == 2
-                      ? innerHeight
-                      : 1;
+                        ? innerHeight
+                        : 1;
             let inv = invert4(viewMatrix);
             if (e.shiftKey) {
                 inv = translate4(
@@ -1236,8 +1120,8 @@ async function main() {
                     inv,
                     0,
                     -moveSpeed *
-                        (gamepad.buttons[12].pressed -
-                            gamepad.buttons[13].pressed),
+                    (gamepad.buttons[12].pressed -
+                        gamepad.buttons[13].pressed),
                     0,
                 );
                 carousel = false;
@@ -1247,8 +1131,8 @@ async function main() {
                 inv = translate4(
                     inv,
                     -moveSpeed *
-                        (gamepad.buttons[14].pressed -
-                            gamepad.buttons[15].pressed),
+                    (gamepad.buttons[14].pressed -
+                        gamepad.buttons[15].pressed),
                     0,
                     0,
                 );
@@ -1275,15 +1159,17 @@ async function main() {
                     cameras[(cameras.indexOf(camera) + 1) % cameras.length];
                 inv = invert4(getViewMatrix(camera));
                 carousel = false;
+                resize();
             }
             if (gamepad.buttons[5].pressed && !rightGamepadTrigger) {
                 camera =
                     cameras[
-                        (cameras.indexOf(camera) + cameras.length - 1) %
-                            cameras.length
+                    (cameras.indexOf(camera) + cameras.length - 1) %
+                    cameras.length
                     ];
                 inv = invert4(getViewMatrix(camera));
                 carousel = false;
+                resize();
             }
             leftGamepadTrigger = gamepad.buttons[4].pressed;
             rightGamepadTrigger = gamepad.buttons[5].pressed;
@@ -1306,8 +1192,8 @@ async function main() {
                 activeKeys.includes("KeyJ")
                     ? -0.05
                     : activeKeys.includes("KeyL")
-                      ? 0.05
-                      : 0,
+                        ? 0.05
+                        : 0,
                 0,
                 1,
                 0,
@@ -1317,8 +1203,8 @@ async function main() {
                 activeKeys.includes("KeyI")
                     ? 0.05
                     : activeKeys.includes("KeyK")
-                      ? -0.05
-                      : 0,
+                        ? -0.05
+                        : 0,
                 1,
                 0,
                 0,
@@ -1400,6 +1286,7 @@ async function main() {
                     canvas.height,
                 );
                 gl.uniformMatrix4fv(u_projection, false, projectionMatrix);
+                resize();
 
                 console.log("Loaded Cameras");
             };
@@ -1428,7 +1315,7 @@ async function main() {
         try {
             viewMatrix = JSON.parse(decodeURIComponent(location.hash.slice(1)));
             carousel = false;
-        } catch (err) {}
+        } catch (err) { }
     });
 
     const preventDefault = (e) => {
