@@ -26,8 +26,8 @@ let cameras = [
                 0.9568451487085131
             ]
         ],
-        "fy": 3852.356179237937,
-        "fx": 3844.898776958602
+        "fy": 770.4712358476,
+        "fx": 768.9797553917,
     },
 ];
 
@@ -722,25 +722,21 @@ async function main() {
     gl.vertexAttribDivisor(a_index, 1);
 
     const resize = () => {
-        // 1) 实际渲染分辨率（与 gl.viewport 完全一致）
-        const renderW = Math.round(innerWidth / downsample);
-        const renderH = Math.round(innerHeight / downsample);
+        gl.uniform2fv(u_focal, new Float32Array([camera.fx, camera.fy]));
 
-        gl.canvas.width = renderW;
-        gl.canvas.height = renderH;
-        gl.viewport(0, 0, renderW, renderH);
+        projectionMatrix = getProjectionMatrix(
+            camera.fx,
+            camera.fy,
+            innerWidth,
+            innerHeight,
+        );
 
-        // 2) 按分辨率比例缩放相机内参（从相机原始尺寸 -> 渲染尺寸）
-        // camera.width/height 是相机标定对应的原始图像分辨率
-        const fxScaled = camera.fx * (renderW / camera.width);
-        const fyScaled = camera.fy * (renderH / camera.height);
+        gl.uniform2fv(u_viewport, new Float32Array([innerWidth, innerHeight]));
 
-        // 3) 统一把“渲染用内参/视口”传给 shader
-        gl.uniform2fv(u_focal, new Float32Array([fxScaled, fyScaled]));
-        gl.uniform2fv(u_viewport, new Float32Array([renderW, renderH]));
+        gl.canvas.width = Math.round(innerWidth / downsample);
+        gl.canvas.height = Math.round(innerHeight / downsample);
+        gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
 
-        // 4) 用缩放后的内参与渲染分辨率构建投影矩阵（你的 getProjectionMatrix 已含 Y 翻转）
-        projectionMatrix = getProjectionMatrix(fxScaled, fyScaled, renderW, renderH);
         gl.uniformMatrix4fv(u_projection, false, projectionMatrix);
     };
 
